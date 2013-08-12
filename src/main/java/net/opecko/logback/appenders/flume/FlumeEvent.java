@@ -38,7 +38,7 @@ public class FlumeEvent extends SimpleEvent implements ILoggingEvent {
   private static final String GUID = "guId";
   private static final String DEFAULT_MDC_PREFIX = "";
   private static final String DEFAULT_EVENT_PREFIX = "";
-  private static final String TIMESTAMP = "timeStamp";
+  private static final String TIMESTAMP = "timestamp";
   private final ILoggingEvent event;
   private final Map<String, String> ctx = new HashMap<String, String>();
   private final boolean compress;

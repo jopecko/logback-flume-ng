@@ -79,4 +79,8 @@ public final class Agent {
     return new Agent(host, portNum);
   }
 
+  public static Agent create(final String host, final int port) {
+    return new Agent(host, port);
+  }
+
 }

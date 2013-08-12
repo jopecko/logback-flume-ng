@@ -217,7 +217,7 @@ public class FlumeAppenderTest {
   @Test
   public void testReconnect() throws Exception {
     final String altPort = Integer.toString(Integer.parseInt(testPort) + 1);
-    avroLogger.addAppender(createAppender(Agent.create("localhost", testPort),Agent.create("localhost", altPort)));
+    avroLogger.addAppender(createAppender(Agent.create("localhost", testPort), Agent.create("localhost", altPort)));
     avroLogger.setLevel(Level.ALL);
 
     avroLogger.info("Test message");
